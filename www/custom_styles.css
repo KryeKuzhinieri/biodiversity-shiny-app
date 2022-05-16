@@ -1,0 +1,364 @@
+/* css inspired from here https://themesdesign.in/dashor/layouts/horizontal/index.html */
+
+.card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  /*border: none;*/
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+  margin-bottom: 30px;
+  color: #557B83;
+}
+
+.mini-class-icon {
+  padding: 0 20px;
+  background: linear-gradient(#78b578,#71b171); 
+  text-align: right !important;
+}
+
+.mini-stat-icon {
+  display: inline-block;
+  font-size: 32px;
+  color: #fff;
+  height: 64px;
+  line-height: 64px;
+  width: 64px;
+  text-align: center;
+  position: relative;
+  top: 22px;
+  background: -webkit-gradient(linear,left top,left bottom,from(rgba(255,255,255,.7)),to(#47a138));
+  background: linear-gradient(to bottom,rgba(255,255,255,.7),#47a138);
+  border-radius: 50%;
+
+}
+
+.stats-card {
+  padding: 1.5rem !important;
+}
+
+.main-text {
+  margin-bottom: 1rem !important;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.main-value {
+  margin-bottom: 1rem !important;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+.small-value {
+  margin-bottom: 1rem !important;
+  margin-left: auto;
+}
+
+.values-container {
+  display: flex;
+}
+
+.main-container {
+  margin: 20px;
+}
+
+#species_choices {
+  /*margin: 15px;*/
+}
+
+.icons-rounded {
+  margin-right: 5px;
+  position: absolute;
+  top: 43px;
+  right: 39px;
+  color: white;
+  font-size: 20px;
+}
+
+
+/* START CSS INTROJS COMPONENTS */
+.helplink {
+  background: transparent;
+  border: none;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.helplink,
+.helplink:hover,
+.helplink:active,
+.helplink:visited {
+  outline: none;
+}
+
+.introjs-overlay {
+  background: rgba(15, 16, 17, 0.6) !important;
+  backdrop-filter: blur(3px);
+}
+
+.introjs-tooltip {
+  box-sizing: border-box !important;
+  background: #191a1a !important;
+  border: #ccd2e2 !important;
+  border-radius: 4px !important;
+}
+
+.introjs-arrow.top,
+.introjs-arrow.top-middle {
+  border-bottom-color: rgba(141, 143, 154, 0.1) !important;
+}
+
+.introjs-arrow.bottom,
+.introjs-arrow.bottom-middle {
+  border-top-color: rgba(141, 143, 154, 0.1) !important;
+}
+
+.introjs-arrow.right,
+.introjs-arrow.right-bottom {
+  border-left-color: rgba(141, 143, 154, 0.1) !important;
+}
+
+.introjs-button {
+  text-shadow: none !important;
+  background-image: none !important;
+  border-radius: 4px !important;
+  font-family: IBM Plex Sans !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  padding: 5px 12px !important;
+  font-size: 12px !important;
+  background: #191a1a !important;
+  box-shadow: none !important;
+  border: 1px solid #2c2d2f !important;
+  color: rgba(246, 248, 249, 0.5) !important;
+}
+
+.introjs-nextbutton {
+  margin-left: 10px !important;
+  float: right;
+}
+
+.introjs-prevbutton {
+  float: right;
+}
+
+.introjs-donebutton {
+  display: inline !important;
+  float: right !important;
+}
+
+.introjs-skipbutton {
+  float: left !important;
+  border: none !important;
+  margin-top: -5px !important;
+}
+
+.introjs-skipbutton:hover {
+  background: rgba(204, 210, 226, 0.16) !important;
+  color: rgba(246, 248, 249, 0.75) !important;
+  border : none !important;
+  box-shadow: none !important; 
+
+}
+
+.introjs-button:active,
+.introjs-button:focus,
+.introjs-button:hover {
+  background: rgba(204, 210, 226, 0.16) !important;
+  text-shadow: none !important;
+  background-image: none !important;
+  font-family: IBM Plex Sans !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 12px !important;
+  box-shadow: none !important;
+  color: rgba(246, 248, 249, 0.75) !important;
+}
+
+.introjs-disabled {
+  display: none !important;
+}
+
+.introjs-helperLayer {
+  background-color: transparent !important;
+  box-shadow: 0 0 0 9999px rgb(30 32 36 / 80%) !important;
+  border: 1px solid #0099FF !important;
+  border-radius: 4px !important;
+}
+
+.introjs-hint {
+  z-index: 10000000 !important;
+}
+
+.introjs-helperNumberLayer {
+  font-family: Fira Code !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  text-align: center !important;
+  color: #ffffff !important;
+  border: none !important;
+  margin: 5px 0 0 0;
+  background: #0099FF !important;
+  text-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.introjs-tooltiptext {
+  font-family: IBM Plex Sans !important;
+  font-size: 13px !important;
+  color: #f6f8f9 !important;
+  font-weight: normal;
+}
+
+.introjs-tooltiptext > .help-header {
+  font-family: IBM Plex Sans;
+  font-weight: 600;
+  font-size: 13px;
+  color: #f6f8f9 !important;
+}
+
+.introjs-tooltiptext .help-number {
+  font-family: IBM Plex Sans;
+  font-size: 13px !important;
+  text-align: right;
+  color: rgba(246, 248, 249, 0.75) !important;
+  mix-blend-mode: normal;
+}
+
+.introjs-tooltiptext .help-number2 {
+  font-family: IBM Plex Sans;
+  font-size: 10px !important;
+  line-height: 13px;
+  color: rgba(246, 248, 249, 0.5) !important;
+  mix-blend-mode: normal;
+  text-align: right;
+  margin-top: 3px !important;
+}
+
+.introjs-help-number-oblique {
+  opacity: 0.5 !important;
+  font-size: 13px !important;
+}
+
+.introjs-div-help-number{
+  float : right !important; 
+  display : flex !important;
+}
+
+.introjs-tooltiptext > .help-text {
+  font-family: IBM Plex Sans;
+  font-size: 13px;
+  color: #f6f8f9 !important;
+  font-weight: normal;
+  margin: 5px 0 15px;
+}
+
+.introjs-tooltipReferenceLayer {
+  position: absolute !important;
+}
+
+.introjs-helperLayer {
+  position: absolute !important;
+}
+
+.introjs-tooltip {
+  padding: 20px;
+  position: absolute;
+  z-index: 999999;
+}
+
+/* END CSS INTROJS COMPONENTS */
+
+
+.buttons {
+  display: flex;
+}
+
+.map-pies {
+  margin: 5px;
+  margin-bottom: 30px;
+}
+
+.icon-kingdoms {
+  right: 37px !important;
+}
+
+.icon-families {
+  right: 41px !important;
+}
+
+.icon-count {
+  right: 36px !important;
+}
+
+.dimension_chart_parent {
+  display: inline-block;
+  width: 100% !important;
+  background: linear-gradient(#78b578,#71b171);
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: #fff;
+}
+
+
+.dimension_chart_header {
+  height: 32px;
+  text-align: center;
+}
+
+.dimension_chart_body {
+  border: 1px solid rgba(128, 133, 133, 0.1);
+  border-radius: 4px;
+}
+
+.chart-title {
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.dimension_chart_body .col-sm-12 {
+  padding: 0px;
+}
+
+.main-logo {
+  width: 100%;
+  height: 100px;
+}
+
+.barplots {
+  margin: 5px;
+}
+
+#splash_screen {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    background: #fff;
+  }
+
+.splash_screen_icons {
+  position: absolute;
+  top: 50%;
+  left: calc(50% - 200px);
+}
+
+.splash_logo {
+  transform-origin: 150%;
+  will-change: transform;
+  animation: rotate-enlarge-translate 1.5s forwards
+    cubic-bezier(0.42, 0, 0.58, 1);
+  height: 75px;
+  margin: -3px 5px 0 0;
+}
