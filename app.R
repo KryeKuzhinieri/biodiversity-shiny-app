@@ -15,13 +15,13 @@ ui <- fluidPage(
     tags$div(id = 'splash_screen',
         tags$div(
             class = 'splash_screen_icons',
-            tags$img(src='logo.svg', class = 'splash_logo'),
+            tags$img(src='svg/logo.svg', class = 'splash_logo'),
         )
     ),
     tags$div(
         class = "main-container",
-        tags$head(tags$link(rel="Biodiversity Dashboard", href="logo.svg")),
-        tags$img(src = "logo.svg", class = "main-logo"),
+        tags$head(tags$link(rel="Biodiversity Dashboard", href="svg/logo.svg")),
+        tags$img(src = "svg/logo.svg", class = "main-logo"),
         fluidRow(
             column(
                 class = "buttons",
@@ -30,7 +30,7 @@ ui <- fluidPage(
                     id = "help",
                     class = "helplink",
                     onclick = "Shiny.onInputChange('help_me', Date.now())",
-                    img(src = "help.svg", height = 24, width = 25)
+                    img(src = "svg/help.svg", height = 24, width = 25)
                 ),
                 width = 12
             ),
@@ -44,9 +44,9 @@ ui <- fluidPage(
                 class = "barplots",
                 column(plotContainer(plotlyOutput("barchart"), "Number of Species Per City"), width = 12)
             ),
-            includeCSS("www/custom_styles.css"),
-            includeScript("www/script.js"),
-            includeScript("www/intro.min.js")
+            includeCSS("www/css/custom_styles.css"),
+            includeScript("www/js/script.js"),
+            includeScript("www/js/intro.min.js")
         )
     )
 
